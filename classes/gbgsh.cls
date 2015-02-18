@@ -178,7 +178,7 @@
   \ifincludeaddress
 
     \lfoot{%
-      \flushleft Tomas Ohlsson, Gothenburgh Startup Hack\\
+      \flushleft Tomas Ohlsson, Gothenburg Startup Hack\\
       Doktor Forselius Backe 17\\
       413 26 Göteborg
     }

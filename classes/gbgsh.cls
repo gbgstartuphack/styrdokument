@@ -47,7 +47,7 @@
   }
 }
 
-\newenvironment{att}{ 
+\newenvironment{att}{
   \begin{list}{\small{\textbf{att}}}{}
 }{
   \end{list}
@@ -84,49 +84,49 @@
 }
 
 \DeclareDocumentCommand \maketitle {} {%
-  
+
       \begin{center}
         \vspace*{0.5cm}
 
-                
+
         {\bf\Huge \@title\par}
-  
+
         \vspace{0.2cm}
         \ifdef{\@subtitle}{{\LARGE \@subtitle\par}}{}
 
         \vspace{0.2cm}
-        
+
         \textbf{Gothenburg Startup Hack} \\
         \Large
 
         \vspace{2cm}
         \centerline{ \includegraphics[width=0.5\textwidth]{gbgshlogo.png}}
         \vspace{2cm}
-        
+
         \Large
 
         \ifincludeauthors
           \ifdef{\@authors}{{\@authors}}{}
           \vspace{2cm}
         \fi
-        
+
         \ifdef{\@approved}{{Antagen: \@approved \\}}{}
         \ifdef{\@revisioned}{{Reviderad: \@revisioned}}{}
         \ifdef{\@editorial}{{Redaktionell revidering: \@editorial}}{}
-        
-        
+
+
     \end{center}
 }
 
 
 \DeclareDocumentCommand \makesimpletitle {} {%
-  
+
     \begin{center}
         \vspace*{0.5cm}
 
-                
+
         {\bf\Huge \@title\par}
-  
+
         \vspace{0.2cm}
         \ifdef{\@subtitle}{{\LARGE \@subtitle\par}}{}
 
@@ -143,7 +143,7 @@
 \DeclareDocumentCommand \makehf {}{%
   \pagestyle{fancy}
   \fancyhf{}
-  
+
   \newcommand{\headleft}{%
     %\raisebox{0mm}{\includegraphics[width=16mm]{gbgshlogo.png}}\hspace{1mm}
     \parbox[b]{10cm}{%
@@ -158,16 +158,16 @@
     \fi
     \ifdef{\@revisioned}{{Reviderad: \@revisioned}}{}
   }
-  
+
   % Calculate header height
   \settototalheight\headheight{\headleft}
   \addtolength\headheight{1.0pt}
-  
+
   \lhead{\headleft}
 
     \rhead{\headright}
 
-  
+
   \renewcommand{\headrule}{
     \nointerlineskip
     \hrulefill
@@ -176,17 +176,17 @@
   \renewcommand{\footrulewidth}{\headrulewidth}
 
   \ifincludeaddress
-  
+
     \lfoot{%
       \flushleft Tomas Ohlsson, Gothenburgh Startup Hack\\
-      Doktor forselius backe 17 lgh 1003\\
+      Doktor Forselius Backe 17\\
       413 26 Göteborg
     }
-    
+
     \rfoot{%
       \begin{flushright}
         \href{mailto:info@gbgstartuphack.com}{info@gbgstartuphack.com}\\
-        \href{https://gbgstartuphack.com}{https://gbgstartuphack.com}
+        \href{http://gbgstartuphack.com}{http://gbgstartuphack.com}
       \end{flushright}
     }
   \fi

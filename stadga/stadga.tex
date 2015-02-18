@@ -1,0 +1,58 @@
+\documentclass[11pt, includeaddress]{classes/gbgsh}
+\usepackage{titlesec}
+\usepackage{titletoc}
+\usepackage{verbatimbox}
+
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus 0.2ex}{0.7em}
+
+%\titleformat{\section}{\normalfont\Large\bfseries}{\S\thesection}{1em}{}
+
+%\contentslabel[\S \thecontentslabel]{2em}
+\titlelabel{\S \thetitle\quad}
+%\renewcommand{\thesection}{\S \arabic{section}}
+
+\graphicspath{ {images/} }
+
+\begin{document}
+
+\title{Stadga}
+\approved{2015--02--18}
+\maketitle
+
+\thispagestyle{empty}
+
+\newpage
+
+\makeheadfoot%
+
+%Rubriksnivådjup
+\setcounter{tocdepth}{2}
+%Sidnumreringsstart
+\setcounter{page}{1}
+\tableofcontents
+
+\newpage
+
+\input{stadga/definition.tex} % Definition
+\newpage
+\input{stadga/medlemskap.tex} % Medlemskap
+\newpage
+\input{stadga/organisation.tex} % Organisation
+\newpage
+\input{stadga/revision.tex} % Revision och ansvarsfrihet
+\newpage
+\input{stadga/arsmotet.tex} % Årsmötet
+\newpage
+\input{stadga/styrelsen.tex} % Styrelsen
+\newpage
+\input{stadga/protokoll.tex} % Protokoll och anslagning
+\newpage
+\input{stadga/andring.tex} % Stadgaändringar
+\newpage
+\input{stadga/upplosning.tex} % Upplösning
+
+
+
+\end{document}
+
